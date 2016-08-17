@@ -1,5 +1,21 @@
 # SQL Helpers
-This repository contains SQL Server function scripts for functions that check the current database for object existence. They provide a simple API for checking table existence, view existence, procedure existence and more.
+This repository contains T-SQL functions that help migrate databases to newer versions.
+The functions provide a simple API for checking whether objects exists and whether they have constraints.
+
+**Instalation instructions**
+
+Run the scripts from this repository on your database to create the helper functions. When newer versions become available, you can safely update to the latest version by running the new scripts.
+
+**List of functions**
+ - [dbo.TableExists](#dbotableexists)
+ - [dbo.ViewExists](#dboviewexists)
+ - [dbo.StoredProcedureExists](#dbostoredprocedureexists)
+ - [dbo.FunctionExists](#dbofunctionexists)
+ - [dbo.IndexExists](#dboindexexists)
+ - [dbo.ColumnExists](#dbocolumnexists)
+ - [dbo.ColumnAllowsNull](#dbocolumnallowsnull)
+ - [dbo.PrimaryKeyExists](#dboprimarykeyexists)
+ - [dbo.TypeExists](#dbotypeexists)
 
 ## dbo.TableExists
 ### Syntax
