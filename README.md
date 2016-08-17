@@ -3,15 +3,19 @@ This repository contains SQL Server function scripts for functions that check th
 
 ## dbo.TableExists
 
-### Parameters
- - @name : sysname, required
+### Syntax
+dbo.TableExists( name )
+
+### Arguments
+*name*
+
+**sysname**, required
  
-### Return Values
-Returns bit, not null
- - 1: a table with `@name` exists
- - 0: a table with `@name` does not exist
+### Return Types
+
+**bit**, not null
  
-### Usage example
+### Usage Examples
 ```sql
 IF dbo.TableExists('dbo.Products') = 0
 BEGIN
