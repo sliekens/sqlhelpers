@@ -1,11 +1,11 @@
-IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[fnFunctionExists]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[FunctionExists]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
 BEGIN
-    DROP FUNCTION [dbo].[fnFunctionExists]
+    DROP FUNCTION [dbo].[FunctionExists]
 END
 
 GO
 
-CREATE FUNCTION [dbo].[fnFunctionExists] (@name sysname)
+CREATE FUNCTION [dbo].[FunctionExists] (@name sysname)
 RETURNS bit
 AS
 BEGIN
