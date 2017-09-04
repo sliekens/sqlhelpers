@@ -49,7 +49,7 @@ BEGIN
   IF EXISTS (
       SELECT *
       FROM sys.indexes
-      WHERE object_id = @OBJECT_ID(@table)
+      WHERE object_id = OBJECT_ID(@table)
         AND NAME = @name
       )
     RETURN 1;
